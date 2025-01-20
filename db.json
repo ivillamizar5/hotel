@@ -1,0 +1,411 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "username": "pepe",
+      "nombre": "pepe",
+      "password": "pepe"
+    }
+  ],
+  "habitacion": [
+    {
+      "id": "1",
+      "tipohabitacion": "Habitación con 2 camas grandes",
+      "servicios": [
+        "Aire acondicionado",
+        "Caja fuerte",
+        "Ropa de cama",
+        "Enchufe cerca de la cama",
+        "Escritorio",
+        "TV",
+        "Nevera",
+        "Teléfono",
+        "Utensilios de planchado",
+        "Cafetera",
+        "Tetera / cafetera",
+        "Plancha para ropa",
+        "Radio"
+      ],
+      "numhabitacion": [
+        "101",
+        "102",
+        "103"
+      ],
+      "precio": "1500000",
+      "propio": [
+        "25 m²",
+        "Aire acondicionado",
+        "Baño en la habitación",
+        "TV de pantalla plana",
+        "Cafetera",
+        " WiFi gratis"
+      ],
+      "imagen": "../imagenes/camas/cama1.png",
+      "cantidadhabitaciones": 3,
+      "cantidadpersonas": 4,
+      "descripcion": "Esta habitación cuádruple tiene aire acondicionado, tetera/cafetera y calefacción. El alojamiento dispone de 2 camas."
+    },
+    {
+      "id": "2",
+      "tipohabitacion": "Habitación con cama extragrande.",
+      "servicios": [
+        "Aire acondicionado",
+        "Caja fuerte",
+        "Ropa de cama",
+        "Enchufe cerca de la cama",
+        "Escritorio",
+        "TV",
+        "Nevera",
+        "Teléfono",
+        "Utensilios de planchado",
+        "Cafetera",
+        "Tetera / cafetera",
+        "Plancha para ropa",
+        "Radio"
+      ],
+      "numhabitacion": [
+        "201",
+        "202",
+        "203",
+        "204"
+      ],
+      "precio": "1080000",
+      "propio": [
+        "29.08 m²",
+        "Aire acondicionado",
+        "Baño en la habitación",
+        "TV de pantalla plana",
+        "Cafetera",
+        " WiFi gratis"
+      ],
+      "imagen": "../imagenes/camas/cama2.png",
+      "cantidadhabitaciones": 4,
+      "cantidadpersonas": 2,
+      "descripcion": "Esta habitación doble es amplia y dispone de aire acondicionado, tetera/cafetera y calefacción. El alojamiento dispone de 1 cama."
+    },
+    {
+      "id": "3",
+      "tipohabitacion": "Habitación con bañera - 1 cama extragrande - Adaptada para personas de movilidad reducida/con discapacidad auditiva",
+      "servicios": [
+        "Aire acondicionado",
+        "Caja fuerte",
+        "Ropa de cama",
+        "Enchufe cerca de la cama",
+        "Escritorio",
+        "TV",
+        "Nevera",
+        "Teléfono",
+        "Utensilios de planchado",
+        "Cafetera",
+        "Tetera / cafetera",
+        "Plancha para ropa",
+        "Radio"
+      ],
+      "numhabitacion": [
+        "301",
+        "302",
+        "303",
+        "304"
+      ],
+      "precio": "1200000",
+      "propio": [
+        "43.66 m²",
+        "Aire acondicionado",
+        "Baño en la habitación",
+        "TV de pantalla plana",
+        "Cafetera",
+        " WiFi gratis"
+      ],
+      "imagen": "../imagenes/camas/cama3.png",
+      "cantidadhabitaciones": 4,
+      "cantidadpersonas": 2,
+      "descripcion": "Esta habitación doble es amplia y cuenta con aire acondicionado, tetera/cafetera y calefacción. El alojamiento dispone de 1 cama."
+    },
+    {
+      "id": "4",
+      "tipohabitacion": "Habitación Doble con 2 camas dobles y balcón",
+      "servicios": [
+        "Aire acondicionado",
+        "Caja fuerte",
+        "Ropa de cama",
+        "Enchufe cerca de la cama",
+        "Escritorio",
+        "TV",
+        "Nevera",
+        "Teléfono",
+        "Utensilios de planchado",
+        "Cafetera",
+        "Tetera / cafetera",
+        "Plancha para ropa",
+        "Radio"
+      ],
+      "numhabitacion": [
+        "401",
+        "402",
+        "403",
+        "404"
+      ],
+      "precio": "1250000",
+      "propio": [
+        "32.61 m²",
+        "Aire acondicionado",
+        "Baño en la habitación",
+        "TV de pantalla plana",
+        "Cafetera",
+        " WiFi gratis",
+        "Balcón"
+      ],
+      "imagen": "../imagenes/camas/cama4.png",
+      "cantidadhabitaciones": 4,
+      "cantidadpersonas": 4,
+      "descripcion": "La habitación cuádruple cuenta con aire acondicionado, una cafetera y tetera, calefacción y un balcón. La unidad tiene 2 camas."
+    },
+    {
+      "id": "5",
+      "tipohabitacion": "Suite Estudio King - Adaptada para personas con discapacidad auditiva",
+      "servicios": [
+        "Aire acondicionado",
+        "Caja fuerte",
+        "Ropa de cama",
+        "Enchufe cerca de la cama",
+        "Escritorio",
+        "TV",
+        "Nevera",
+        "Teléfono",
+        "Utensilios de planchado",
+        "Cafetera",
+        "Tetera / cafetera",
+        "Plancha para ropa",
+        "Radio"
+      ],
+      "numhabitacion": [
+        "501",
+        "502",
+        "503",
+        "504"
+      ],
+      "precio": "1200000",
+      "propio": [
+        "43.66 m²",
+        "Aire acondicionado",
+        "Baño en la habitación",
+        "TV de pantalla plana",
+        "Cafetera",
+        " WiFi gratis"
+      ],
+      "imagen": "../imagenes/camas/cama5.png",
+      "cantidadhabitaciones": 4,
+      "cantidadpersonas": 4,
+      "descripcion": "Este estudio cuenta con aire acondicionado, una cafetera y tetera, y calefacción. La unidad tiene 2 camas."
+    },
+    {
+      "id": "6",
+      "tipohabitacion": "Suite Estudio Premium con balcón - Cama extragrande",
+      "servicios": [
+        "Aire acondicionado",
+        "Caja fuerte",
+        "Ropa de cama",
+        "Enchufe cerca de la cama",
+        "Escritorio",
+        "TV",
+        "Nevera",
+        "Teléfono",
+        "Utensilios de planchado",
+        "Cafetera",
+        "Tetera / cafetera",
+        "Plancha para ropa",
+        "Radio"
+      ],
+      "numhabitacion": [
+        "601",
+        "602",
+        "603",
+        "604"
+      ],
+      "precio": "1280000",
+      "propio": [
+        "40.41 m²",
+        "Aire acondicionado",
+        "Baño en la habitación",
+        "TV de pantalla plana",
+        "Cafetera",
+        " WiFi gratis"
+      ],
+      "imagen": "../imagenes/camas/cama6.png",
+      "cantidadhabitaciones": 4,
+      "cantidadpersonas": 2,
+      "descripcion": "Este estudio cuenta con aire acondicionado, una cafetera y tetera, y calefacción. La unidad ofrece 2 camas."
+    },
+    {
+      "id": "7",
+      "tipohabitacion": "Suite con cama extragrande",
+      "servicios": [
+        "Aire acondicionado",
+        "Caja fuerte",
+        "Ropa de cama",
+        "Enchufe cerca de la cama",
+        "Escritorio",
+        "TV",
+        "Nevera",
+        "Teléfono",
+        "Utensilios de planchado",
+        "Cafetera",
+        "Tetera / cafetera",
+        "Plancha para ropa",
+        "Radio"
+      ],
+      "numhabitacion": [
+        "701",
+        "702",
+        "703",
+        "704"
+      ],
+      "precio": "100000",
+      "propio": [
+        "40.32 m",
+        "Aire acondicionado",
+        "Baño en la habitación",
+        "TV de pantalla plana",
+        "Cafetera",
+        " WiFi gratis"
+      ],
+      "imagen": "../imagenes/camas/cama7.png",
+      "cantidadhabitaciones": 4,
+      "cantidadpersonas": 2,
+      "descripcion": "Esta suite cuenta con aire acondicionado, una cafetera y tetera, y calefacción."
+    },
+    {
+      "id": "8",
+      "tipohabitacion": "Habitación con 2 camas grandes",
+      "servicios": [
+        "Aire acondicionado",
+        "Caja fuerte",
+        "Ropa de cama",
+        "Enchufe cerca de la cama",
+        "Escritorio",
+        "TV",
+        "Nevera",
+        "Teléfono",
+        "Utensilios de planchado",
+        "Cafetera",
+        "Tetera / cafetera",
+        "Plancha para ropa",
+        "Radio"
+      ],
+      "numhabitacion": [
+        "801",
+        "802",
+        "803",
+        "804"
+      ],
+      "precio": "900000",
+      "propio": [
+        "33 m²",
+        "Aire acondicionado",
+        "Baño en la habitación",
+        "TV de pantalla plana",
+        "Cafetera",
+        " WiFi gratis"
+      ],
+      "imagen": "../imagenes/camas/cama8.png",
+      "cantidadhabitaciones": 4,
+      "cantidadpersonas": 4,
+      "descripcion": "Esta habitación cuádruple tiene aire acondicionado, tetera/cafetera y calefacción. El alojamiento dispone de 2 camas."
+    },
+    {
+      "id": "9",
+      "tipohabitacion": "Habitación Doble con balcón - 2 camas",
+      "servicios": [
+        "Aire acondicionado",
+        "Caja fuerte",
+        "Ropa de cama",
+        "Enchufe cerca de la cama",
+        "Escritorio",
+        "TV",
+        "Nevera",
+        "Teléfono",
+        "Utensilios de planchado",
+        "Cafetera",
+        "Tetera / cafetera",
+        "Plancha para ropa",
+        "Radio"
+      ],
+      "numhabitacion": [
+        "901",
+        "902",
+        "903",
+        "904"
+      ],
+      "precio": "400000",
+      "propio": [
+        "30 m²",
+        "Aire acondicionado",
+        "Baño en la habitación",
+        "TV de pantalla plana",
+        "Cafetera",
+        " WiFi gratis"
+      ],
+      "imagen": "../imagenes/camas/cama9.png",
+      "cantidadhabitaciones": 4,
+      "cantidadpersonas": 2,
+      "descripcion": "Esta habitación dispone de 2 camas individuales, aire acondicionado, TV de pantalla plana con canales por cable, baño privado y balcón. El alojamiento cuenta con 2 camas."
+    },
+    {
+      "id": "10",
+      "tipohabitacion": "Habitación Doble Deluxe con balcón",
+      "servicios": [
+        "Aire acondicionado",
+        "Caja fuerte",
+        "Ropa de cama",
+        "Enchufe cerca de la cama",
+        "Escritorio",
+        "TV",
+        "Nevera",
+        "Teléfono",
+        "Utensilios de planchado",
+        "Cafetera",
+        "Tetera / cafetera",
+        "Plancha para ropa",
+        "Radio"
+      ],
+      "numhabitacion": [
+        "1001",
+        "1002",
+        "1003",
+        "1004"
+      ],
+      "precio": "60000",
+      "propio": [
+        "35 m²",
+        "Aire acondicionado",
+        "Baño en la habitación",
+        "TV de pantalla plana",
+        "Cafetera",
+        " WiFi gratis"
+      ],
+      "imagen": "../imagenes/camas/cama10.png",
+      "cantidadhabitaciones": 4,
+      "cantidadpersonas": 2,
+      "descripcion": "Esta habitación doble es amplia y cuenta con aire acondicionado, tetera/cafetera y calefacción. El alojamiento dispone de 1 cama."
+    }
+  ],
+  "reserva": [
+    {
+      "id": "6713",
+      "fechareserva": "2025-01-19",
+      "fechafinreserva": "2025-01-19",
+      "idusuario": "1",
+      "idhabitacion": 3,
+      "precio": "9600000",
+      "numhabitacion": [
+        "304",
+        "303",
+        "302",
+        "301"
+      ],
+      "estado": false,
+      "noches": 1,
+      "cantidadpersonas": "2"
+    }
+  ]
+}

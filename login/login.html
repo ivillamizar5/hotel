@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio de Sesión</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="./loginSesion.js" defer type="module"></script>
+  </head>
+  <body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50">
+      <nav class="flex justify-between items-center p-4 bg-white shadow-md">
+        <!-- Logo -->
+        <a href="/">
+          <img class="w-12" src="../imagenes/logo.png" alt="Logo del hotel" />
+        </a>
+
+        <!-- menu de navegación -->
+        <div class="flex gap-4 hidden md:flex">
+          <a class="cursor-pointer text-blue-600 hover:text-blue-800" href="/">Inicio</a>
+          <a class="cursor-pointer text-blue-600 hover:text-blue-800" href="./registro.html">Hazte una cuenta</a>
+          <a class="cursor-pointer text-blue-600 hover:text-blue-800" href="../habitaciones/index.html">Habitaciones</a>
+          <a class="cursor-pointer text-blue-600 hover:text-blue-800" id="cerrarSesion">Cerrar sesión</a>
+        </div>
+
+        <!-- boton de menu para pantallas pequeñas -->
+        <div class="md:hidden flex items-center">
+          <button id="menuButton" class="text-blue-600 hover:text-blue-800">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- menu desplegable en pantallas pequeñas -->
+      <div id="mobileMenu" class="hidden md:hidden bg-white shadow-md">
+        <a class="block px-4 py-2 text-blue-600 hover:text-blue-800" href="./login/registro.html">Hazte una cuenta</a>
+        <a class="block px-4 py-2 text-blue-600 hover:text-blue-800" href="./habitaciones/index.html">Habitaciones</a>
+        <a class="block px-4 py-2 text-blue-600 hover:text-blue-800" id="cerrarSesion">Cerrar sesión</a>
+      </div>
+    </header>
+
+    <!-- Main contenido -->
+    <main class="flex items-center justify-center bg-gray-100 min-h-screen px-4">
+      <div class="w-full max-w-md bg-white p-8 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-semibold text-center text-blue-600 mb-6">Iniciar Sesión</h2>
+        
+        <form id="formularioLogin" class="space-y-6">
+          <!-- Usuario -->
+          <div>
+            <label for="nombreUsuario" class="block text-sm font-medium text-gray-700">Nombre de Usuario</label>
+            <input
+              type="text"
+              id="nombreUsuario"
+              class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Ingresa tu usuario"
+              required
+            />
+          </div>
+    
+          <!-- Contraseña -->
+          <div>
+            <label for="contrasenna" class="block text-sm font-medium text-gray-700">Contraseña</label>
+            <input
+              type="password"
+              id="contrasenna"
+              class="mt-1 w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+              placeholder="Ingresa tu contraseña"
+              required
+            />
+          </div>
+    
+          <!-- Botón de enviar -->
+          <button
+            type="submit"
+            class="w-full py-2 px-4 bg-blue-600 text-white font-semibold rounded-md shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            Ingresar
+          </button>
+        </form>
+    
+        <div class="mt-4 text-center">
+          <p class="text-sm text-gray-500">¿No tienes cuenta? <a href="./registro.html" class="text-blue-600 hover:text-blue-800">Regístrate</a></p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Botón WhatsApp -->
+    <a class="fixed bottom-4 left-4" target="_blank" href="https://wa.me/3103131997?text=Hola, quiero conocer más sobre sus servicios">
+      <img src="../imagenes/whatsapp.png" class="w-16" alt="whatsapp" />
+    </a>
+
+  </body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <script src="./index.js" defer type="module"></script>
+
+  <body class="">
+    <!-- Header -->
+    <header class="sticky top-0 z-50">
+      <nav class="flex justify-between items-center p-4 bg-white shadow-md">
+        <!-- Logo -->
+        <a href="/">
+          <img class="w-12" src="./imagenes/logo.png" alt="Logo del hotel" />
+        </a>
+
+        <!-- menu de navegación -->
+        <div class="flex gap-4 hidden md:flex">
+          <a
+            class="cursor-pointer text-blue-600 hover:text-blue-800"
+            id="hazteunacuenta"
+            href="./login/registro.html"
+            >Hazte una cuenta</a
+          >
+          <a
+            class="cursor-pointer text-blue-600 hover:text-blue-800"
+            href="./habitaciones/index.html"
+            >Habitaciones</a
+          >
+          <a
+            class="cursor-pointer text-blue-600 hover:text-blue-800"
+            id="cerrarSesion"
+            >Cerrar sesión</a
+          >
+        </div>
+
+        <!-- boton de menu para pantallas pequeñas -->
+        <div class="md:hidden flex items-center">
+          <button id="menuButton" class="text-blue-600 hover:text-blue-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- menu desplegable en pantallas pequeñas -->
+      <div id="mobileMenu" class="hidden md:hidden bg-white shadow-md">
+        <a
+          class="block px-4 py-2 text-blue-600 hover:text-blue-800"
+          href="./login/registro.html"
+          >Hazte una cuenta</a
+        >
+        <a
+          class="block px-4 py-2 text-blue-600 hover:text-blue-800"
+          href="./habitaciones/index.html"
+          >Habitaciones</a
+        >
+
+        <a
+          class="block px-4 py-2 text-blue-600 hover:text-blue-800"
+          id="cerrarSesion"
+          >Cerrar sesión</a
+        >
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Encabezado con imagen -->
+      <section class="relative w-full">
+        <!-- Video en bucle y sin controles -->
+        <video class="w-full h-1/4 object-cover" autoplay muted loop>
+          <source src="./videos/inicio.mp4" type="video/mp4" />
+        </video>
+
+        <h1
+          class="absolute inset-0 flex items-center text-2xl justify-center md:text-4xl lg:text-6xl text-white bg-black bg-opacity-50 p-4 text-center"
+        >
+          Hotel el Rincón del Carmen, el refugio perfecto para tu descanso.
+        </h1>
+      </section>
+
+      <div class="container mx-auto mt-8 px-5 xl:px-32">
+        <!-- Bienvenida -->
+        <section>
+          <p class="text-center mt-3 mb-4 text-gray-700 text-lg">
+            Disfrute de nuestras instalaciones de primera clase, habitaciones
+            confortables y un ambiente acogedor. Estamos aquí para hacer que se
+            sienta como en casa. ¡Esperamos que su tiempo con nosotros sea
+            simplemente perfecto!
+          </p>
+        </section>
+        <h1 class="text-center text-xl mt-3 font-semibold text-gray-800 mb-7">
+          ¡Esperamos hacer de tu estancia algo inolvidable!
+        </h1>
+
+        <!-- Carrusel -->
+        <section class="relative m-auto w:full sm:w-5/6 mt-10">
+          <!-- Contenedor de imágenes -->
+          <div id="carousel" class="overflow-hidden relative">
+            <div
+              class="flex transition-all duration-700 ease-in-out"
+              id="carouselImages"
+            >
+              <img
+                src="./imagenes/eventos.jpg"
+                class="w-full object-cover"
+                alt="Image 3"
+              />
+              <img
+                src="./imagenes/cenas.jpeg"
+                class="w-full object-cover"
+                alt="Image 4"
+              />
+              <img
+                src="./imagenes/fotoBoda.jpg"
+                class="w-full object-cover"
+                alt="Image 1"
+              />
+              <img
+                src="./imagenes/salon.jpg"
+                class="w-full object-cover"
+                alt="Image 2"
+              />
+            </div>
+          </div>
+
+          <button
+            id="prevButton"
+            class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full focus:outline-none"
+          >
+            &#10094;
+          </button>
+          <button
+            id="nextButton"
+            class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full focus:outline-none"
+          >
+            &#10095;
+          </button>
+        </section>
+
+        <!-- Servicios-->
+        <h1 class="text-xl mt-6 font-semibold text-gray-800 mb-3">
+          Un universo de experiencias
+        </h1>
+        <section
+          class="grid grid-cols-1 md:grid-cols-3 gap-4 m-auto w-full px-4"
+        >
+          <div class="flex flex-col items-start border border-gray-200 p-4">
+            <img
+              src="./imagenes/golf.png"
+              alt="Spa del hotel"
+              class="h-60 w-full object-cover shadow-md"
+            />
+            <h3 class="mt-3 font-semibold text-gray-800">Spa</h3>
+            <p class="text-gray-700 mt-3">
+              El hotel está próximo al campo de golf Tierra del Sol, diseñado
+              por el famoso arquitecto Robert Trent Jones II. Está situado en un
+              lugar privilegiado y puede presumir de ser uno de los campos de
+              golf con mejores vistas en los que practicar su swing. Se trata
+              del único campo de golf de 18 hoyos de Aruba para campeonatos y es
+              apto para jugadores de todos los niveles.
+            </p>
+          </div>
+          <div class="flex flex-col items-start border border-gray-200 p-4">
+            <img
+              src="./imagenes/boda.png"
+              alt="Spa del hotel"
+              class="h-60 w-full object-cover shadow-md"
+            />
+            <h3 class="mt-3 font-semibold text-gray-800">Golf</h3>
+            <p class="text-gray-700 mt-3">
+              El hotel cuenta con varios espacios diseñados para celebrar la
+              boda de sus sueños frente al mar, además de un romántico gazebo
+              para la ceremonia y una suite nupcial perfecta para iniciar esta
+              nueva etapa. Contáctenos y empiece a organizar su boda en Aruba.
+            </p>
+          </div>
+          <div class="flex flex-col items-start border border-gray-200 p-4">
+            <img
+              src="./imagenes/spa.png"
+              alt="Spa del hotel"
+              class="h-60 w-full object-cover shadow-md"
+            />
+            <h3 class="mt-3 font-semibold text-gray-800">Celebra tu boda</h3>
+            <p class="text-gray-700 mt-3">
+              Un espacioso Spa con zona de aguas, una amplia variedad de
+              tratamientos y siete zonas de relajación con distintos ambientes.
+              La carta ofrece masajes exclusivos, tratamientos corporales y
+              faciales, servicio de uñas y peluquería.
+            </p>
+          </div>
+        </section>
+
+        <!-- Restaurante -->
+        <section
+          class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 container mx-auto px-4"
+        >
+          <div class="flex flex-col justify-center text-center px-4">
+            <h2 class="text-xl font-semibold mb-4">
+              Disfrute de Nuestro Restaurante Orvietto
+            </h2>
+            <p class="text-gray-700">
+              Deléitese con una mezcla de sabores colombianos e internacionales
+              elaborados con los mejores y más frescos ingredientes. Desde
+              abundantes opciones de desayuno hasta deliciosas opciones
+              gastronómicas para sus almuerzos y cenas, Orvietto ofrece un
+              ambiente acogedor donde podrá saborear cada bocado.
+            </p>
+          </div>
+          <div class="flex justify-center items-center">
+            <img
+              src="./imagenes/restaurante.jpg"
+              alt="Restaurante del hotel"
+              class="h-60 w-full object-cover rounded-lg shadow-md"
+            />
+          </div>
+        </section>
+
+        <!-- Galería de imágenes -->
+        <h1 class="text-xl mt-3 font-semibold text-gray-800 mb-3">
+          Un paseo por el hotel
+        </h1>
+
+        <section class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          <div class="">
+            <img
+              src="./imagenes/vista1.png"
+              alt="restaurante"
+              class="h-60 w-full md:w-full md:h-96 object-cover"
+            />
+          </div>
+          <div class="">
+            <img
+              src="./imagenes/vista2.png"
+              alt="restaurante"
+              class="h-60 w-full md:w-full object-cover md:h-full"
+            />
+          </div>
+          <div class="">
+            <img
+              src="./imagenes/vista3.png"
+              alt="restaurante"
+              class="h-60 w-full md:w-full object-cover md:h-full"
+            />
+          </div>
+          <div class="">
+            <img
+              src="./imagenes/vista4.png"
+              alt="restaurante"
+              class="h-60 w-full md:w-full object-cover md:h-full"
+            />
+          </div>
+          <div class="">
+            <img
+              src="./imagenes/vista5.png"
+              alt="restaurante"
+              class="h-60 w-full md:w-full object-cover md:h-full"
+            />
+          </div>
+          <div class="">
+            <img
+              src="./imagenes/vista6.png"
+              alt="restaurante"
+              class="h-60 w-full md:w-full object-cover md:h-full"
+            />
+          </div>
+        </section>
+
+        <!-- boton whatsapp-->
+        <a
+          class="fixed bottom-4 left-4"
+          target="_blank"
+          href="https://wa.me/3103131997?text=Hola, quiero conocer más sobre sus servicios"
+        >
+          <img src="./imagenes/whatsapp.png" class="w-16" alt="whatsapp" />
+        </a>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-8">
+      <div class="container mx-auto text-center">
+        <p>
+          &copy; 2025 Hotel El Rincón del Carmen. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
