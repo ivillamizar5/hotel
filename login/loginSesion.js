@@ -2,16 +2,16 @@
 import {verificarUsuario} from "./funcionesUsuario.js";
 import {crearSesion,cerrarIniciarSesion} from "./funcionSesion.js";
 
-const hazteunacuenta = document.getElementById("hazteunacuenta")
-const cerrarSesion = document.getElementById("cerrarSesion");
-
+const hazteunacuenta = document.querySelectorAll(".hazteunacuenta")
+const cerrarSesion = document.querySelectorAll(".cerrarSesion");
+const habitacionesReservadas = document.querySelectorAll(".habitacionesReservadas");
 
 const formu = document.getElementById("formularioLogin");
 
 
     let ruta ="./login.html";
 
-   cerrarIniciarSesion(cerrarSesion,hazteunacuenta,function (ms) {
+   cerrarIniciarSesion(cerrarSesion,hazteunacuenta,habitacionesReservadas,function (ms) {
     return new Promise(resolve => setTimeout(resolve, ms))
   },ruta)
 
