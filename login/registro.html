@@ -25,9 +25,14 @@
           <!-- menu de navegación -->
           <div class="flex gap-4 hidden md:flex">
             <a class="cursor-pointer text-blue-600 hover:text-blue-800" href="/">Inicio</a>
-            <a class="cursor-pointer text-blue-600 hover:text-blue-800" href="./registro.html">Hazte una cuenta</a>
+            <a class="cursor-pointer text-blue-600 hover:text-blue-800 hazteunacuenta" href="./registro.html">Hazte una cuenta</a>
             <a class="cursor-pointer text-blue-600 hover:text-blue-800" href="../habitaciones/index.html">Habitaciones</a>
-            <a class="cursor-pointer text-blue-600 hover:text-blue-800" id="cerrarSesion">Cerrar sesión</a>
+            <a 
+            class="cursor-pointer text-blue-600 hover:text-blue-800 habitacionesReservadas"
+            href="./usuario/habitacionesReservadas.html"
+            >Habitaciones reservadas
+          </a>
+            <a class="cursor-pointer text-blue-600 hover:text-blue-800" href="../login/login.html cerrarSesion">Cerrar sesión</a>
           </div>
   
           <!-- boton de menu para pantallas pequeñas -->
@@ -42,9 +47,14 @@
   
         <!-- menu desplegable en pantallas pequeñas -->
         <div id="mobileMenu" class="hidden md:hidden bg-white shadow-md">
-          <a class="block px-4 py-2 text-blue-600 hover:text-blue-800 cursor-pointer" id="hazteunacuenta" href="../login/registro.html">Hazte una cuenta</a>
+          <a class="block px-4 py-2 text-blue-600 hover:text-blue-800 cursor-pointer hazteunacuenta" href="../login/registro.html">Hazte una cuenta</a>
           <a class="block px-4 py-2 text-blue-600 hover:text-blue-800 cursor-pointer" href="../habitaciones/index.html">Habitaciones</a>
-          <a class="cursor-pointer text-blue-600 hover:text-blue-800" id="cerrarSesion">Cerrar sesión</a>
+          <a
+          class="block px-4 py-2 text-blue-600 hover:text-blue-800 habitacionesReservadas"
+          href="./usuario/habitacionesReservadas.html"
+          >Habitaciones reservadas
+          </a>
+          <a class="block px-4 py-2 text-blue-600 hover:text-blue-800 cursor-pointer cerrarSesion">Cerrar sesión</a>
         </div>
       </header>
 
