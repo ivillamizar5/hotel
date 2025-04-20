@@ -1,12 +1,13 @@
 import { cerrarIniciarSesion } from "./login/funcionSesion.js";
 
-const hazteunacuenta = document.getElementById("hazteunacuenta")
-const cerrarSesion = document.getElementById("cerrarSesion");
+const hazteunacuenta = document.querySelectorAll(".hazteunacuenta")
+const cerrarSesion = document.querySelectorAll(".cerrarSesion");
+const habitacionesReservadas = document.querySelectorAll(".habitacionesReservadas");
 
 
     let ruta ="./login/login.html";
 
-   cerrarIniciarSesion(cerrarSesion,hazteunacuenta,function (ms) {
+   cerrarIniciarSesion(cerrarSesion,hazteunacuenta,habitacionesReservadas,function (ms) {
     return new Promise(resolve => setTimeout(resolve, ms))
   },ruta)
 
