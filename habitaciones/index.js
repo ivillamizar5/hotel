@@ -8,13 +8,15 @@ import {
 
 const habitaciones = document.getElementById("habitaciones");
 const formConsulta = document.getElementById("formConsulta");
-const hazteunacuenta = document.getElementById("hazteunacuenta");
-const cerrarSesion = document.getElementById("cerrarSesion");
+const hazteunacuenta = document.querySelectorAll(".hazteunacuenta");
+const cerrarSesion = document.querySelectorAll(".cerrarSesion");
 
 //modal
 const modal = document.getElementById("modal");
 const tituloModal = document.querySelector(".tituloModal");
 const textoModal = document.querySelector(".textoModal");
+const habitacionesReservadas = document.querySelectorAll(".habitacionesReservadas");
+
 
 // Formatear la fecha actual a YYYY-MM-DD
 const fechaActual = new Date();
@@ -31,6 +33,7 @@ let ruta = "../login/login.html";
 cerrarIniciarSesion(
   cerrarSesion,
   hazteunacuenta,
+  habitacionesReservadas,
   function (ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   },
