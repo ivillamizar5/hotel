@@ -6,13 +6,14 @@ const nombre = document.getElementById("nombre");
 const usuario = document.getElementById("usuario");
 const password = document.getElementById("contrasenna");
 
-const hazteunacuenta = document.getElementById("hazteunacuenta")
-const cerrarSesion = document.getElementById("cerrarSesion");
+const hazteunacuenta = document.querySelectorAll(".hazteunacuenta")
+const cerrarSesion = document.querySelectorAll(".cerrarSesion");
+const habitacionesReservadas = document.querySelectorAll(".habitacionesReservadas");
 
 
 let ruta ="./login.html";
 
-cerrarIniciarSesion(cerrarSesion,hazteunacuenta,function (ms) {
+cerrarIniciarSesion(cerrarSesion,hazteunacuenta,habitacionesReservadas,function (ms) {
  return new Promise(resolve => setTimeout(resolve, ms))
 },ruta)
 
