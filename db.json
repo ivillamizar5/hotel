@@ -5,6 +5,12 @@
       "username": "pepe",
       "nombre": "pepe",
       "password": "pepe"
+    },
+    {
+      "id": "6835",
+      "username": "carlos",
+      "nombre": "carlos",
+      "password": "carlos"
     }
   ],
   "habitacion": [
@@ -406,6 +412,49 @@
       "estado": false,
       "noches": 1,
       "cantidadpersonas": "2"
+    },
+    {
+      "id": "4dc7",
+      "fechareserva": "2025-04-20",
+      "fechafinreserva": "2025-04-20",
+      "idusuario": "6835",
+      "idhabitacion": 2,
+      "precio": "2160000",
+      "numhabitacion": [
+        "201",
+        "202"
+      ],
+      "estado": false,
+      "noches": 1,
+      "cantidadpersonas": "1"
+    },
+    {
+      "id": "88d6",
+      "fechareserva": "2025-04-20",
+      "fechafinreserva": "2025-04-20",
+      "idusuario": "6835",
+      "idhabitacion": 4,
+      "precio": "1250000",
+      "numhabitacion": [
+        "401"
+      ],
+      "estado": false,
+      "noches": 1,
+      "cantidadpersonas": "1"
+    },
+    {
+      "id": "307e",
+      "fechareserva": "2025-04-20",
+      "fechafinreserva": "2025-04-20",
+      "idusuario": "6835",
+      "idhabitacion": 6,
+      "precio": "1280000",
+      "numhabitacion": [
+        "601"
+      ],
+      "estado": false,
+      "noches": 1,
+      "cantidadpersonas": "1"
     }
   ]
 }
