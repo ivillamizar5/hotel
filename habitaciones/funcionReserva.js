@@ -1,3 +1,4 @@
+import { traerIdUsuario } from "../login/funcionesUsuario.js";
 
 //mostrar habitacion por idHabitacion
 async function mostrarHabitacionId(idHabitacion) {
@@ -54,6 +55,50 @@ async function traerReservas() {
     console.log(error);
   }
 }
+
+// http://localhost:3000/reserva?idusuario=1
+async function traerReservasxUsuario() {
+  try {
+    const idUsuario = await traerIdUsuario(); // Espera que se resuelva traerIdUsuario
+    
+    const respuesta = await fetch(`http://localhost:3000/reserva?idusuario=${idUsuario}`);
+    
+    if (!respuesta.ok) {
+      throw new Error("Error al traer las reservas");
+    }
+
+    const data = await respuesta.json();
+    console.log(data);
+    return data;
+
+  } catch (error) {
+    console.error("Error al obtener las reservas:", error);
+  }
+}
+
+// Función para eliminar una reserva
+async function eliminarReserva(idReserva) {
+  try {
+    const respuesta = await fetch(`http://localhost:3000/reserva/${idReserva}`, {
+      method: "DELETE",
+    });
+
+    if (!respuesta.ok) {
+      throw new Error("Error al eliminar la reserva");
+    }
+
+    const resultado = await respuesta.json();
+    console.log("Reserva eliminada correctamente:", resultado);
+    return true; // éxito
+  } catch (error) {
+    console.error("Error al eliminar la reserva:", error);
+    return false; // fallo
+  }
+}
+
+
+
+
 
 // // Filtrar habitaciones que no están reservadas
 
@@ -168,4 +213,6 @@ export {
   mostrarHabitaciones,
   traerNumeroHabitacionNoReservada,
   reservarHabitacion,
+  traerReservasxUsuario,
+  eliminarReserva
 };
