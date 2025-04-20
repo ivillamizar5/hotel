@@ -9,36 +9,31 @@ function crearSesion(nomUsu){
   }
 }
 
-
-function cerrarIniciarSesion(cerrarSesion,hazteunacuenta,sleep,ruta){  
-  console.log(cerrarSesion)
+function cerrarIniciarSesion(cerrarSesion, hazteunacuenta, habitacionesReservadas, sleep, ruta) {
   if (usuario) {
-    // Si hay un usuario
-    cerrarSesion.innerHTML = "Cerrar Sesión"
-    hazteunacuenta.removeAttribute("href");
-    hazteunacuenta.innerHTML="";
-  }  else {
-    cerrarSesion.innerHTML = "Iniciar Sesión"
-  //   // si el usuario está vacío
-  //   //mensajeAlerta.textContent = "No hay sesión activa. Será redirigido en 5 segundo a la página de inicio de Sesion";
-   }
+    cerrarSesion.forEach(boton => boton.innerHTML = "Cerrar Sesión");
 
-   cerrarSesion.addEventListener("click", () => {
-    console.log("aca")
-    if(localStorage.getItem("usuarioActual")===null){
-      
-      window.location.href = ruta;
-      
-    }else{
-      localStorage.removeItem("usuarioActual");
-      sleep(1000).then(() => {
-      
-        window.location.href = "./index.html"
-      });
-    }
-  })
+    hazteunacuenta.forEach(elem => elem.style.display = "none");
 
+    habitacionesReservadas.forEach(elem => elem.style.display = "block");
+  } else {
+    cerrarSesion.forEach(boton => boton.innerHTML = "Iniciar Sesión");
+    habitacionesReservadas.forEach(elem => elem.style.display = "none");
+    hazteunacuenta.forEach(elem => elem.style.display = "block");
+  }
 
+  cerrarSesion.forEach(boton => {
+    boton.addEventListener("click", () => {
+      if (localStorage.getItem("usuarioActual") === null) {
+        window.location.href = ruta;
+      } else {
+        localStorage.removeItem("usuarioActual");
+        sleep(1000).then(() => {
+          window.location.href = "../index.html";
+        });
+      }
+    });
+  });
 }
 
 
