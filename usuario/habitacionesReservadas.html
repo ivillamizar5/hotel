@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Habitaciones</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <script src="./index.js" type="module" defer></script>
+  <body class="flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="sticky top-0 z-50">
+      <nav class="flex justify-between items-center p-4 bg-white shadow-md">
+        <!-- Logo -->
+        <a href="/">
+          <img class="w-12" src="../imagenes/logo.png" alt="Logo del hotel" />
+        </a>
+
+        <!-- menu de navegación -->
+        <div class="flex gap-4 hidden md:flex">
+          <a class="cursor-pointer text-blue-600 hover:text-blue-800" href="/"
+            >Inicio</a
+          >
+
+          <a
+            class="cursor-pointer text-blue-600 hover:text-blue-800 hazteunacuenta"
+            href="../login/registro.html"
+            >Hazte una cuenta</a
+          >
+
+          <a
+            class="cursor-pointer text-blue-600 hover:text-blue-800"
+            href="../habitaciones/index.html"
+            >Habitaciones</a
+          >
+          <a
+            class="cursor-pointer text-blue-600 hover:text-blue-800 habitacionesReservadas"
+            href="./habitacionesReservadas.html"
+            >Habitaciones reservadas
+          </a>
+          <a
+            class="cursor-pointer text-blue-600 hover:text-blue-800 cerrarSesion"
+            >Cerrar sesión</a
+          >
+        </div>
+
+        <!-- boton de menu para pantallas pequeñas -->
+        <div class="md:hidden flex items-center">
+          <button id="menuButton" class="text-blue-600 hover:text-blue-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+
+      <!-- menu desplegable en pantallas pequeñas -->
+      <div id="mobileMenu" class="hidden md:hidden bg-white shadow-md">
+        <a
+          class="block px-4 py-2 text-blue-600 hover:text-blue-800"
+          href="../habitaciones/index.html"
+          >Habitaciones</a
+        >
+
+        <a
+        class="block px-4 py-2 text-blue-600 hover:text-blue-800 hazteunacuenta"
+     
+        href="../login/registro.html"
+        >Hazte una cuenta</a
+        >
+
+        <a
+          class="block px-4 py-2 text-blue-600 hover:text-blue-800   habitacionesReservadas"
+          href="./habitacionesReservadas.html"
+    
+          >Habitaciones reservadas
+        </a>
+
+        <a
+          class="block px-4 py-2 text-blue-600 hover:text-blue-800 cerrarSesion"
+  
+          >Cerrar sesión</a
+        >
+      </div>
+      <div
+        id="modal"
+        class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center"
+      >
+        <div class="bg-white p-5 rounded shadow-lg">
+          <h2 class="text-xl font-bold mb-4 tituloModal">Título del Modal</h2>
+          <p class="textoModal">Este es un contenido dentro de un modal.</p>
+          <button
+            id="closeModal"
+            class="mt-4 bg-red-500 text-white p-2 rounded"
+          >
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div id="habitacionesReservadaUsuario" class="flex-grow" > </div>
+
+      <!-- boton whatsapp-->
+  <a
+  class="fixed bottom-4 left-4"
+  target="_blank"
+  href="https://wa.me/3103131997?text=Hola, quiero conocer más sobre sus servicios"
+>
+  <img src="../imagenes/whatsapp.png" class="w-16" alt="whatsapp" />
+</a>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 mt-8">
+      <div class="container mx-auto text-center">
+        <p>
+          &copy; 2025 Hotel El Rincón del Carmen. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
