@@ -16,7 +16,6 @@ async function verificarUsuario(usuario, password) {
 }
 
 async function traerIdUsuario() {
-
   let usuario = localStorage.getItem("usuarioActual");
   if (usuario === null) {
     return false;
@@ -26,7 +25,7 @@ async function traerIdUsuario() {
       const result = await fetch(
         `http://localhost:3000/usuarios?username=${usuario}`
       );
-
+      
       if (!result.ok) {
         throw new Error("Error al traer los datos");
       }
@@ -37,8 +36,11 @@ async function traerIdUsuario() {
       console.log(error);
     }
   }
-
 }
+
+
+
+
 
 // Exportar todas las funciones
 export { verificarUsuario, traerIdUsuario };
