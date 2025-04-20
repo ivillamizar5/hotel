@@ -24,8 +24,8 @@
         <!-- menu de navegación -->
         <div class="flex gap-4 hidden md:flex">
           <a
-            class="cursor-pointer text-blue-600 hover:text-blue-800"
-            id="hazteunacuenta"
+            class="cursor-pointer text-blue-600 hover:text-blue-800 hazteunacuenta"
+        
             href="./login/registro.html"
             >Hazte una cuenta</a
           >
@@ -34,9 +34,16 @@
             href="./habitaciones/index.html"
             >Habitaciones</a
           >
+          <a 
+            class="cursor-pointer text-blue-600 hover:text-blue-800 habitacionesReservadas"
+            href="./usuario/habitacionesReservadas.html"
+            >Habitaciones reservadas
+          </a>
+         
+
+
           <a
-            class="cursor-pointer text-blue-600 hover:text-blue-800"
-            id="cerrarSesion"
+            class="cursor-pointer text-blue-600 hover:text-blue-800 cerrarSesion"
             >Cerrar sesión</a
           >
         </div>
@@ -65,19 +72,23 @@
       <!-- menu desplegable en pantallas pequeñas -->
       <div id="mobileMenu" class="hidden md:hidden bg-white shadow-md">
         <a
-          class="block px-4 py-2 text-blue-600 hover:text-blue-800"
+          class="block px-4 py-2 text-blue-600 hover:text-blue-800 hazteunacuenta"
           href="./login/registro.html"
-          >Hazte una cuenta</a
-        >
+
+        >Hazte una cuenta
         <a
           class="block px-4 py-2 text-blue-600 hover:text-blue-800"
           href="./habitaciones/index.html"
           >Habitaciones</a
         >
+        <a
+        class="block px-4 py-2 text-blue-600 hover:text-blue-800 habitacionesReservadas"
+        href="./usuario/habitacionesReservadas.html"
+        >Habitaciones reservadas
+        </a>
 
         <a
-          class="block px-4 py-2 text-blue-600 hover:text-blue-800"
-          id="cerrarSesion"
+          class="block px-4 py-2 text-blue-600 hover:text-blue-800 cerrarSesion"
           >Cerrar sesión</a
         >
       </div>
